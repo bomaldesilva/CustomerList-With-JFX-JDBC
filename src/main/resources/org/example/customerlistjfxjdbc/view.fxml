@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="526.0" style="-fx-background-color: #9e6be1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.customerlistjfxjdbc.ViewController">
+   <children>
+      <TableView fx:id="tbl" layoutY="47.0" prefHeight="377.0" prefWidth="526.0" style="-fx-background-color: #53a485;">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="64.0" style="-fx-background-color: white;" text="Id" />
+          <TableColumn fx:id="name" prefWidth="122.0" style="-fx-background-color: white;" text="Name" />
+            <TableColumn fx:id="address" prefWidth="107.0" style="-fx-background-color: white;" text="Address" />
+            <TableColumn fx:id="salary" minWidth="4.0" prefWidth="106.0" style="-fx-background-color: white;" text="Salary" />
+            <TableColumn fx:id="contactNo" prefWidth="126.0" style="-fx-background-color: white;" text="Contact No" />
+        </columns>
+      </TableView>
+      <Label layoutY="-1.0" prefHeight="48.0" prefWidth="526.0" style="-fx-background-color: #9e6be1; -fx-alignment: center;" text="Customer List" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo ExtraBold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="236.0" layoutY="431.0" onAction="#reloadOnClick" style="-fx-background-color: white;" text="Reload">
+         <font>
+            <Font name="Apple SD Gothic Neo ExtraBold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
